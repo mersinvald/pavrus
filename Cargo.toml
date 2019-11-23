@@ -5,6 +5,18 @@ authors = ["mersinvald <me@mkl.dev>"]
 edition = "2018"
 license = "MIT"
 
+[lib]
+name = "pavrus"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pavrusc"
+path = "src/main.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[dev-dependencies]
+pest = "2.1.2"
+pest_derive = "2.1.0"

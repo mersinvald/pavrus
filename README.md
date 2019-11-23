@@ -13,3 +13,9 @@ This repository is my take on basics of compiler construction, while reading Wir
 This repository follows Semantic Versioning and [Conventional Commits](CONVENTIONAL_COMMITS.md).
 
 Tagging and GitHub releases are automatic, through the use of [semanteecore](https://github.com/semantecore/semantecore) CI tool.
+
+### Artistic differences
+
+* I decided to not call the language Oberon-0, and chose a rather hipsterish name `pavrus`, which translates as `small` from Latin.
+* `pavrus` has a Rust-ish syntax, with no begins and ends
+* To be continued...
