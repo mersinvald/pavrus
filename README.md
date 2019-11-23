@@ -1,5 +1,7 @@
 ## Jorney through Wirth Compiler Construstion in Rust
 
+[![codecov](https://codecov.io/gh/mersinvald/wirth-compiler-construction/branch/master/graph/badge.svg)](https://codecov.io/gh/mersinvald/wirth-compiler-construction)
+
 This repository is my take on basics of compiler construction, while reading Wirth's Compiler Construstion.
 
 ### Versioning and branches
