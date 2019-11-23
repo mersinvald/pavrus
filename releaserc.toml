@@ -1,0 +1,30 @@
+[plugins]
+git = "builtin"
+clog = "builtin"
+github = "builtin"
+
+[steps]
+pre_flight = "discover"
+get_last_release = "git"
+derive_next_version = [ "clog" ]
+generate_notes = "clog"
+prepare = "discover"
+verify_release = "discover"
+commit = "git"
+publish = ["github"]
+notify = "discover"
+
+[cfg.clog]
+# Ignore commits like feat(ci) cause it makes no sense to issue a release for improvements in CI config
+ignore = ["ci"]
+
+[cfg.git]
+branch = "master"
+force_https = true
+
+[cfg.github]
+pre_release = false
+assets = [
+    "/workspace/bin/*",
+    "Changelog.md"
+]
